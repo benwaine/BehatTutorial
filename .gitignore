@@ -1,4 +1,5 @@
-answers/
+*/vendor/
+*/bin/
  
 # Compiled source #
 ###################

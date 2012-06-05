@@ -1,2 +1,39 @@
 Mink Steps
 
+Given /^(?:|I )am on "(?P<page>[^"]+)"$/
+ When /^(?:|I )go to "(?P<page>[^"]+)"$/
+ When /^(?:|I )reload the page$/
+ When /^(?:|I )move backward one page$/
+ When /^(?:|I )move forward one page$/
+ When /^(?:|I )press "(?P<button>(?:[^"]|\\")*)"$/
+ When /^(?:|I )follow "(?P<link>(?:[^"]|\\")*)"$/
+ When /^(?:|I )fill in "(?P<field>(?:[^"]|\\")*)" with "(?P<value>(?:[^"]|\\")*)"$/
+ When /^(?:|I )fill in "(?P<value>(?:[^"]|\\")*)" for "(?P<field>(?:[^"]|\\")*)"$/
+ When /^(?:|I )fill in the following:$/
+ When /^(?:|I )select "(?P<option>(?:[^"]|\\")*)" from "(?P<select>(?:[^"]|\\")*)"$/
+ When /^(?:|I )additionally select "(?P<option>(?:[^"]|\\")*)" from "(?P<select>(?:[^"]|\\")*)"$/
+ When /^(?:|I )check "(?P<option>(?:[^"]|\\")*)"$/
+ When /^(?:|I )uncheck "(?P<option>(?:[^"]|\\")*)"$/
+ When /^(?:|I )attach the file "(?P<path>[^"]*)" to "(?P<field>(?:[^"]|\\")*)"$/
+ Then /^(?:|I )should be on "(?P<page>[^"]+)"$/
+ Then /^the (?i)url(?-i) should match (?P<pattern>"([^"]|\\")*")$/
+ Then /^the response status code should be (?P<code>\d+)$/
+ Then /^the response status code should not be (?P<code>\d+)$/
+ Then /^(?:|I )should see "(?P<text>(?:[^"]|\\")*)"$/
+ Then /^(?:|I )should not see "(?P<text>(?:[^"]|\\")*)"$/
+ Then /^(?:|I )should see text matching (?P<pattern>"(?:[^"]|\\")*")$/
+ Then /^(?:|I )should not see text matching (?P<pattern>"(?:[^"]|\\")*")$/
+ Then /^the response should contain "(?P<text>(?:[^"]|\\")*)"$/
+ Then /^the response should not contain "(?P<text>(?:[^"]|\\")*)"$/
+ Then /^(?:|I )should see "(?P<text>(?:[^"]|\\")*)" in the "(?P<element>[^"]*)" element$/
+ Then /^(?:|I )should not see "(?P<text>(?:[^"]|\\")*)" in the "(?P<element>[^"]*)" element$/
+ Then /^the "(?P<element>[^"]*)" element should contain "(?P<value>(?:[^"]|\\")*)"$/
+ Then /^(?:|I )should see an? "(?P<element>[^"]*)" element$/
+ Then /^(?:|I )should not see an? "(?P<element>[^"]*)" element$/
+ Then /^the "(?P<field>(?:[^"]|\\")*)" field should contain "(?P<value>(?:[^"]|\\")*)"$/
+ Then /^the "(?P<field>(?:[^"]|\\")*)" field should not contain "(?P<value>(?:[^"]|\\")*)"$/
+ Then /^the "(?P<checkbox>(?:[^"]|\\")*)" checkbox should be checked$/
+ Then /^the "(?P<checkbox>(?:[^"]|\\")*)" checkbox should not be checked$/
+ Then /^(?:|I )should see (?P<num>\d+) "(?P<element>[^"]*)" elements?$/
+ Then /^print last response$/
+ Then /^show last response$/

@@ -7,6 +7,8 @@ use Behat\Behat\Context\ClosuredContextInterface,
 use Behat\Gherkin\Node\PyStringNode,
     Behat\Gherkin\Node\TableNode;
 
+require_once __DIR__ . '/../../vendor/.composer/autoload.php';
+
 //
 // Require 3rd-party libraries here:
 //
@@ -27,18 +29,7 @@ class FeatureContext extends BehatContext
      */
     public function __construct(array $parameters)
     {
-        // Initialize your context here
+        $this->useContext('mink', new Behat\MinkExtension\Context\MinkContext);  
     }
 
-//
-// Place your definition and hook methods here:
-//
-//    /**
-//     * @Given /^I have done something with "([^"]*)"$/
-//     */
-//    public function iHaveDoneSomethingWith($argument)
-//    {
-//        doSomethingWith($argument);
-//    }
-//
 }

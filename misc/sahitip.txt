@@ -1,0 +1,4 @@
+Starting Sahi
+
+1. cd /home/tuser/sahi/bin
+2. sudo sh sahi.sh

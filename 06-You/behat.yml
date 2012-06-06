@@ -1,0 +1,8 @@
+default:
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url: 'http://CHANGEME/'
+      javascript_session: sahi
+      goutte: ~
+      sahi: ~
+

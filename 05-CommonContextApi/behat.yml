@@ -1,0 +1,10 @@
+default:
+  context:
+    parameters:
+      base_url: http://tut5.dev
+  extensions:
+    Behat\MinkExtension\Extension:
+      base_url: 'http://tut5.dev'
+      javascript_session: sahi
+      goutte: ~
+      sahi: ~

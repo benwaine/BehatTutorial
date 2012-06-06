@@ -1,9 +1,14 @@
 {
-    "hash": "27acd245a8df8ea5273fb0720803b925",
+    "hash": "c55ccdef0eb413249a4e23207862702e",
     "packages": [
         {
             "package": "behat/behat",
             "version": "v2.4.0"
+        },
+        {
+            "package": "behat/common-contexts",
+            "version": "dev-master",
+            "source-reference": "ac7499e648cc2f786a912e1adb4d5d40bdb40e38"
         },
         {
             "package": "behat/gherkin",
@@ -40,13 +45,13 @@
         {
             "package": "fabpot/goutte",
             "version": "dev-master",
-            "source-reference": "b1e5611edfff95a4872ae6ffc2501dd818b57223"
+            "alias-pretty-version": "1.0.x-dev",
+            "alias-version": "1.0.9999999.9999999-dev"
         },
         {
             "package": "fabpot/goutte",
             "version": "dev-master",
-            "alias-pretty-version": "1.0.x-dev",
-            "alias-version": "1.0.9999999.9999999-dev"
+            "source-reference": "b1e5611edfff95a4872ae6ffc2501dd818b57223"
         },
         {
             "package": "guzzle/guzzle",
@@ -87,13 +92,13 @@
         {
             "package": "symfony/console",
             "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
+            "source-reference": "22be75777fe18315637abe092de5aa5c7f4ed3cd"
         },
         {
             "package": "symfony/console",
             "version": "dev-master",
-            "source-reference": "22be75777fe18315637abe092de5aa5c7f4ed3cd"
+            "alias-pretty-version": "2.1.x-dev",
+            "alias-version": "2.1.9999999.9999999-dev"
         },
         {
             "package": "symfony/css-selector",
@@ -109,13 +114,13 @@
         {
             "package": "symfony/dependency-injection",
             "version": "dev-master",
-            "alias-pretty-version": "2.1.x-dev",
-            "alias-version": "2.1.9999999.9999999-dev"
+            "source-reference": "b6916c7db53e798d8c761e45e6931430369fef2a"
         },
         {
             "package": "symfony/dependency-injection",
             "version": "dev-master",
-            "source-reference": "b6916c7db53e798d8c761e45e6931430369fef2a"
+            "alias-pretty-version": "2.1.x-dev",
+            "alias-version": "2.1.9999999.9999999-dev"
         },
         {
             "package": "symfony/dom-crawler",

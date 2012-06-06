@@ -6,11 +6,16 @@
         "fabpot/goutte": "*",
         "instaclick/php-webdriver": "*",
         "behat/mink-sahi-driver": "*",
-        "behat/mink-goutte-driver": "*"
+        "behat/mink-goutte-driver": "*",
+        "benwaine/phabric": "*"
 
     },
 
     "config": {
         "bin-dir": "bin"
+    },
+
+    "autoload": {
+        "psr-0": {"PHPCon": "lib/"}
     }
 }

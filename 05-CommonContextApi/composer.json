@@ -6,7 +6,8 @@
         "fabpot/goutte": "*",
         "instaclick/php-webdriver": "*",
         "behat/mink-sahi-driver": "*",
-        "behat/mink-goutte-driver": "*"
+        "behat/mink-goutte-driver": "*",
+        "behat/common-contexts": "*"
 
     },
 

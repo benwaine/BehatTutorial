@@ -1,0 +1,25 @@
+
+root { 
+    display: block;
+}
+
+.wrapper {
+    width: 60%;
+    margin: 40px auto;
+}
+
+
+
+table.conferences{
+    width: 70%;
+}
+
+table.conferences thead th{
+    text-align: left;
+    padding: 4px;
+}
+
+table.conferences tbody tr td{
+    text-align: left;
+    padding: 2px;
+} 

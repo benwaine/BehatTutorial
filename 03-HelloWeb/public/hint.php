@@ -12,7 +12,6 @@
 	</head>
 	<body>
 	<!-- YOUR HTML HERE --> 
-	<h1>Hello Example 03</h1>
 	</body>
 
 </html>

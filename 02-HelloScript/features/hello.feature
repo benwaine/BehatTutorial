@@ -4,8 +4,8 @@ So my users are greeted correctly
 
 Scenario: As a hello user 
 I should be greeted with the name I enter
-    Given Im in the src directory
-    When I execute the hello command with "ben"
+    Given I am in the src directory
+    When I execute the hello command with "Ben"
     Then I should see:
         """
         Hello Ben
@@ -13,7 +13,7 @@ I should be greeted with the name I enter
 
 Scenario: As an annonymous hello scrit user
 I should be greeted with the title stranger
-    Given Im in the src directory
+    Given I am in the src directory
     When I execute the hello command
     Then I should see:
         """

@@ -14,6 +14,8 @@ use Behat\Gherkin\Node\PyStringNode,
 //   require_once 'PHPUnit/Framework/Assert/Functions.php';
 //
 
+require_once __DIR__ . '/../../vendor/autoload.php';
+
 /**
  * Features context.
  */
@@ -27,18 +29,49 @@ class FeatureContext extends BehatContext
      */
     public function __construct(array $parameters)
     {
-        // Initialize your context here
+       
     }
 
-//
-// Place your definition and hook methods here:
-//
-//    /**
-//     * @Given /^I have done something with "([^"]*)"$/
-//     */
-//    public function iHaveDoneSomethingWith($argument)
-//    {
-//        doSomethingWith($argument);
-//    }
-//
+    /**
+     * @Given /^I am in the src directory$/
+     */
+    public function iAmInTheSrcDirectory()
+    {
+        $path = __DIR__ . '/../../src';
+        chdir($path);
+    }
+
+    /**
+     * @When /^I execute the hello command$/
+     */
+    public function iExecuteTheHelloCommand($name = null)
+    {
+        $output = exec("php command.php"); 
+        
+        $this->output = $output;
+    }
+
+    /**
+     * @When /^I execute the hello command with "([^"]*)"$/
+     */
+    public function iExecuteTheHelloCommandWith($name)
+    {
+        $output = exec("php command.php $name");
+
+        $this->output = $output;
+    }
+
+
+    /**
+     * @Then /^I should see:$/
+     */
+    public function iShouldSee(PyStringNode $string)
+    {
+        if ((string) $string !== $this->output) {
+            throw new Exception(
+                "Actual output is:\n" . $this->output
+            );
+        }
+    }
+
 }

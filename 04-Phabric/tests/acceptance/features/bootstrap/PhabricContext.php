@@ -44,7 +44,6 @@ class PhabricContext extends BehatContext
                 'CONFLOOKUP', function($confName, $bus) {
                     $ent = $bus->getEntity('conference');
                     $id = $ent->getNamedItemId($confName);
-                    var_dump("conf lookup". $id);
                     return $id;
                }
         );
@@ -64,7 +63,6 @@ class PhabricContext extends BehatContext
      */
     public function theFollowingSessionsExist(TableNode $table)
     {
-        var_dump($table);
         $this->phabric->insertFromTable('session', $table);
     }
     

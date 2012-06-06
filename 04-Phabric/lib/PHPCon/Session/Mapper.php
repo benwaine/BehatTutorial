@@ -12,13 +12,17 @@ class Mapper
     
     public function fetchByConferenceId($id)
     {
-        $sql = "SELECT * FROM session where confid = $id";
-
-        $sessions = $this->connection->fetchAll($sql);
-        var_dump($sessions); 
-        $sessionObs = $this->handleResults($sessions);
+        // Write sql to fetch sessions from the database
         
-        return $sessionObs;
+        // Use handle results to get an array of session objects
+        
+        // return them
+        
+        $sql = "SELECT * FROM session WHERE `conference_id` = ?";
+        
+        $sessions = $this->connection->fetchAll($sql, array($id));
+        
+        return $this->handleResults($sessions);
     }
     
     protected function handleResults($results)

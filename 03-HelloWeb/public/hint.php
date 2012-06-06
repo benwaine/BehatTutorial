@@ -8,10 +8,12 @@
 		<script type="text/javascript" src="js/js/jquery-ui-1.8.21.custom.min.js"></script>
 		<script type="text/javascript">
 		// YOUR JS HERE
+		// See the example in the js folder 
+
 		</script>
 	</head>
 	<body>
-	<!-- YOUR HTML HERE --> 
+	<!-- YOUR HTML && PHP HERE --> 
 	</body>
 
 </html>

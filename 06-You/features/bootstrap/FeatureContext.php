@@ -7,7 +7,7 @@ use Behat\Behat\Context\ClosuredContextInterface,
 use Behat\Gherkin\Node\PyStringNode,
     Behat\Gherkin\Node\TableNode;
 
-require_once __DIR__ . '/../../vendor/.composer/autoload.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 //
 // Require 3rd-party libraries here:
@@ -31,5 +31,15 @@ class FeatureContext extends BehatContext
     {
         $this->useContext('mink', new Behat\MinkExtension\Context\MinkContext);  
     }
+
+
+    /**
+     * @Then /^I wait for the suggestion box to appear$/
+     */
+    public function iWaitForTheSuggestionBoxToAppear()
+    {
+         $this->getSubcontext('mink')->getSession()->wait(5000, "$('.suggestions-results').children().length > 0");
+    }
+
 
 }

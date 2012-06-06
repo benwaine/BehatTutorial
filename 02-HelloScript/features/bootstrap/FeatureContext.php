@@ -7,8 +7,6 @@ use Behat\Behat\Context\ClosuredContextInterface,
 use Behat\Gherkin\Node\PyStringNode,
     Behat\Gherkin\Node\TableNode;
 
-require_once __DIR__ . '/../../vendor/autoload.php';
-
 //
 // Require 3rd-party libraries here:
 //
@@ -29,15 +27,18 @@ class FeatureContext extends BehatContext
      */
     public function __construct(array $parameters)
     {
-        $this->useContext('mink', new Behat\MinkExtension\Context\MinkContext);
+        // Initialize your context here
     }
 
-    /**
-     * @Then /^I wait for the suggestion box to appear$/
-     */
-    public function iWaitForTheSuggestionBoxToAppear()
-    {
-        $this->getSubcontext('mink')->getSession()->wait(1000, "$('.name').children().length > 0");
-    }
-
+//
+// Place your definition and hook methods here:
+//
+//    /**
+//     * @Given /^I have done something with "([^"]*)"$/
+//     */
+//    public function iHaveDoneSomethingWith($argument)
+//    {
+//        doSomethingWith($argument);
+//    }
+//
 }
